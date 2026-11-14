@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LaundryGo | Smart Laundry Queue</title><style>
-:root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#18374c;background:#f1f7fb}*{box-sizing:border-box}body{margin:0}header{background:linear-gradient(105deg,#116c91,#36a6b0);color:#fff;padding:30px max(20px,calc((100vw - 1100px)/2))}header h1{margin:0;font-size:34px}header p{margin:7px 0 0;opacity:.95}main{max-width:1100px;margin:24px auto;padding:0 18px 38px}.intro{margin-bottom:20px}.intro h2{font-size:24px;margin:0 0 8px}.intro p{color:#60798a;margin:0;line-height:1.6}.layout{display:grid;grid-template-columns:1.15fr 1fr;gap:18px}.card{background:#fff;border:1px solid #dbe7ef;border-radius:18px;padding:23px;margin-bottom:18px;box-shadow:0 6px 24px #1842600b}h2{font-size:21px;margin:0 0 12px}h3{font-size:17px;margin:0 0 8px}.muted{color:#60798a;font-size:13px;line-height:1.6}.machines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:10px}.machine{border:1px solid #dce8ee;border-radius:13px;padding:15px;background:#fbfdff}.machine strong{font-size:20px}.pill{display:inline-block;font-size:11px;padding:5px 10px;border-radius:30px;background:#e8f0f5;color:#46677a;text-transform:capitalize}.pill.free{background:#ddf7e9;color:#147d4a}.pill.hold{background:#fff0cd;color:#956000}.pill.busy{background:#e7effb;color:#3c629c}button,select{font:inherit}button{border:0;border-radius:11px;background:#147da3;color:#fff;padding:13px 15px;font-weight:700;cursor:pointer}button:hover{filter:brightness(.95)}button:disabled{opacity:.56;cursor:not-allowed}.secondary{background:#e7f3f8;color:#15678a}select{width:100%;padding:13px;border:1px solid #cddde6;border-radius:11px;margin:8px 0 13px;background:#fff}label{font-size:13px;font-weight:700}.full{width:100%}.ticket{background:#f1f9fc;border:1px solid #d1e9f1;border-radius:13px;padding:18px;margin-top:14px}.ticket p{line-height:1.7}.steps{display:grid;gap:11px}.step{display:flex;gap:12px;align-items:flex-start}.num{flex:0 0 29px;height:29px;border-radius:50%;display:grid;place-items:center;background:#e7f3f8;color:#15678a;font-weight:800;font-size:13px}.step strong{font-size:14px}.step p{margin:3px 0 0}.future{border:1px solid #e3eaf0;border-radius:12px;padding:15px;background:#f8fbfd}.future strong{font-size:14px}.future p{margin:6px 0 0}.status-note{padding:12px 14px;background:#f0f7fc;border-radius:12px;color:#42667c;font-size:13px;line-height:1.6}.footer{text-align:center;color:#668292;font-size:12px;padding:15px}@media(max-width:760px){.layout{grid-template-columns:1fr}header{padding:24px 20px}.card{padding:18px}.machines{grid-template-columns:repeat(2,minmax(0,1fr))}}
+:root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#18374c;background:#f1f7fb}*{box-sizing:border-box}body{margin:0}header{background:linear-gradient(105deg,#116c91,#36a6b0);color:#fff;padding:30px max(20px,calc((100vw - 1100px)/2))}header h1{margin:0;font-size:34px}header p{margin:7px 0 0;opacity:.95}main{max-width:1100px;margin:24px auto;padding:0 18px 38px}.intro{margin-bottom:20px}.intro h2{font-size:24px;margin:0 0 8px}.intro p{color:#60798a;margin:0;line-height:1.6}.layout{display:grid;grid-template-columns:1.15fr 1fr;gap:18px}.card{background:#fff;border:1px solid #dbe7ef;border-radius:18px;padding:23px;margin-bottom:18px;box-shadow:0 6px 24px #1842600b}h2{font-size:21px;margin:0 0 12px}h3{font-size:17px;margin:0 0 8px}.muted{color:#60798a;font-size:13px;line-height:1.6}.machines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:10px}.machine{border:1px solid #dce8ee;border-radius:13px;padding:15px;background:#fbfdff}.machine strong{font-size:20px}.pill{display:inline-block;font-size:11px;padding:5px 10px;border-radius:30px;background:#e8f0f5;color:#46677a;text-transform:capitalize}.pill.free{background:#ddf7e9;color:#147d4a}.pill.hold{background:#fff0cd;color:#956000}.pill.busy{background:#e7effb;color:#3c629c}button,select{font:inherit}button{border:0;border-radius:11px;background:#147da3;color:#fff;padding:13px 15px;font-weight:700;cursor:pointer}button:hover{filter:brightness(.95)}button:disabled{opacity:.56;cursor:not-allowed}.secondary{background:#e7f3f8;color:#15678a}select{width:100%;padding:13px;border:1px solid #cddde6;border-radius:11px;margin:8px 0 13px;background:#fff}label{font-size:13px;font-weight:700}.full{width:100%}.ticket{background:#f1f9fc;border:1px solid #d1e9f1;border-radius:13px;padding:18px;margin-top:14px}.ticket p{line-height:1.7}.steps{display:grid;gap:11px}.step{display:flex;gap:12px;align-items:flex-start}.num{flex:0 0 29px;height:29px;border-radius:50%;display:grid;place-items:center;background:#e7f3f8;color:#15678a;font-weight:800;font-size:13px}.step strong{font-size:14px}.step p{margin:3px 0 0}.future{border:1px solid #e3eaf0;border-radius:12px;padding:15px;background:#f8fbfd}.future strong{font-size:14px}.future p{margin:6px 0 0}.status-note{padding:12px 14px;background:#f0f7fc;border-radius:12px;color:#42667c;font-size:13px;line-height:1.6}.simline{padding:11px 13px;border:1px solid #dce8ee;border-radius:11px;background:#fbfdff;margin:8px 0}.simline strong{color:#164f70}.simclock{font-size:29px;font-weight:800;color:#b36b19;font-variant-numeric:tabular-nums}.simactions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.simactions button{flex:1 1 150px}.footer{text-align:center;color:#668292;font-size:12px;padding:15px}@media(max-width:760px){.layout{grid-template-columns:1fr}header{padding:24px 20px}.card{padding:18px}.machines{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style></head>
 <body><header><h1>🫧 LaundryGo</h1><p>Smart self-service laundromat · Join the queue for free</p></header>
 <main><div class="intro"><h2>Your laundry, without the guessing</h2><p>See machine information and join one shared waiting list from your phone. No payment is collected on this prototype.</p></div>
@@ -9,7 +9,7 @@
 <section class="card"><h2>How LaundryGo works</h2><div class="steps">
 <div class="step"><span class="num">1</span><div><strong>Choose your service</strong><p class="muted">Select a washing machine or dryer.</p></div></div>
 <div class="step"><span class="num">2</span><div><strong>Join the shared queue</strong><p class="muted">Your waiting position updates automatically across devices.</p></div></div>
-<div class="step"><span class="num">3</span><div><strong>Wait for machine assignment</strong><p class="muted">Automatic assignment and arrival verification are planned for a later version.</p></div></div>
+<div class="step"><span class="num">3</span><div><strong>Wait for machine assignment</strong><p class="muted">Try the independent Stage 5 assignment simulation below; real shared assignment is not enabled.</p></div></div>
 <div class="step"><span class="num">4</span><div><strong>Check in and pay on arrival</strong><p class="muted">Future feature only. This version does not accept payments or start machines.</p></div></div>
 </div></section></div>
 <div><section class="card"><h2>🎟️ My queue</h2><p class="muted">This is the only customer queue. It is shared through Firebase, and joining is free.</p>
@@ -17,9 +17,19 @@
 <label for="sharedType">Choose service</label><select id="sharedType"><option value="washer">Washing machine</option><option value="dryer">Dryer</option></select>
 <button class="full" disabled id="sharedJoin">Join queue for free</button><p aria-live="polite" id="sharedMessage" class="muted"></p>
 <div class="ticket" id="sharedMine" style="display:none"></div><h3 style="margin-top:20px">Current waiting customers</h3><div class="muted" id="sharedCounts">Loading shared queue…</div><p class="muted">Positions are ordered using Firebase server timestamps. Only the first 100 waiting entries are displayed in this prototype.</p></section>
-<section class="card"><h2>🧾 My booking</h2><div class="status-note"><strong>Waiting list is active</strong><div>When you join the queue, your ticket and position appear above. Machine assignment, the 5-minute check-in timer, machine QR verification and payment are not active yet.</div></div></section>
-<section class="card"><h2>Coming next</h2><div class="future"><strong>Automatic machine assignment</strong><p class="muted">A trusted backend will allocate available machines fairly and manage expired reservations.</p></div><div class="future" style="margin-top:10px"><strong>QR check-in and payment</strong><p class="muted">Verified on-site check-in and simulated payment will be added after secure assignment is implemented.</p></div></section>
-</div></div><p class="footer">LaundryGo university prototype · Shared Firebase machine records and waiting queue · No real machine control or payments</p></main>
+<section class="card"><h2>🧾 My booking</h2><div class="status-note"><strong>Waiting list is active</strong><div>When you join the queue, your ticket and position appear above. Your shared booking is still waiting-list only. The Stage 5 panel below separately demonstrates assignment and expiry without changing Firestore.</div></div></section>
+<section class="card" id="stage5"><h2>🧪 Stage 5 · Automatic assignment demo</h2>
+<p class="muted">Independent classroom simulation. It does <strong>not</strong> assign real Firebase customers or reserve Firebase machines. Your shared queue above is unchanged.</p>
+<div class="status-note">Demo waiting line: Customer A → Customer B → Customer C. The first customer gets the next free washer. Each customer has five simulated minutes to check in.</div>
+<div id="simMachine" class="simline" aria-live="polite"></div>
+<div id="simQueue" class="simline" aria-live="polite"></div>
+<div id="simAssignment" class="simline" aria-live="polite"></div>
+<div class="simactions"><button type="button" id="simAdvance" class="secondary">Advance 1 minute</button><button type="button" id="simCheckin">Check in assigned customer</button><button type="button" id="simFinish" class="secondary">Finish cycle</button><button type="button" id="simReset" class="secondary">Restart demo</button></div>
+<p id="simNotice" class="muted" aria-live="polite"></p>
+<p class="muted">To test expiry: press “Advance 1 minute” five times without checking in. The reservation expires and the next customer is assigned automatically. To test a successful booking, check in and then finish the cycle.</p>
+</section>
+<section class="card"><h2>Coming next</h2><div class="future"><strong>Automatic machine assignment</strong><p class="muted">Stage 5 demonstrates FIFO allocation and expiry locally. A trusted backend is still needed for real shared reservations.</p></div><div class="future" style="margin-top:10px"><strong>QR check-in and payment</strong><p class="muted">Verified on-site check-in and simulated payment will be added after secure assignment is implemented.</p></div></section>
+</div></div><p class="footer">LaundryGo university prototype · Shared Firebase waiting queue · Stage 5 is an isolated simulation · No real machine control or payments</p></main>
 <script type="module">
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/13.3.0/firebase-app.js';
 import { getFirestore, collection, onSnapshot, doc, getDoc, setDoc, updateDoc, serverTimestamp, query, where, limit } from 'https://www.gstatic.com/firebasejs/13.3.0/firebase-firestore.js';
@@ -141,4 +151,41 @@ onAuthStateChanged(auth, user => {
   });
   renderShared();
 });
+</script><script>
+// Stage 5: independent, deterministic classroom simulation. Never writes to Firestore.
+(() => {
+  const el = id => document.getElementById(id);
+  const duration = 5 * 60;
+  let sim;
+  const fmt = sec => `${String(Math.floor(sec / 60)).padStart(2,'0')}:${String(sec % 60).padStart(2,'0')}`;
+  function reset() { sim = {waiting:['Customer A','Customer B','Customer C'], assigned:null, seconds:duration, machine:'W01', running:false, completed:[], expired:[]}; assign(); render('Demo restarted.'); }
+  function assign() { if (!sim.running && !sim.assigned && sim.waiting.length) {sim.assigned=sim.waiting.shift();sim.seconds=duration;} }
+  function render(message='') {
+    el('simMachine').textContent = `Demo machine ${sim.machine}: ${sim.running ? 'In use' : sim.assigned ? 'Reserved' : 'Available'}`;
+    el('simQueue').textContent = `Waiting: ${sim.waiting.length ? sim.waiting.join(' → ') : 'Nobody waiting'} · Expired: ${sim.expired.length} · Completed: ${sim.completed.length}`;
+    const area=el('simAssignment'); area.replaceChildren();
+    const line=document.createElement('strong');line.textContent=sim.running ? `${sim.assigned} checked in · machine running` : sim.assigned ? `${sim.assigned} assigned to ${sim.machine}` : 'No active assignment'; area.append(line);
+    if(sim.assigned && !sim.running){const time=document.createElement('div');time.className='simclock';time.textContent=fmt(sim.seconds);area.append(time);}
+    el('simAdvance').disabled=!sim.assigned || sim.running;
+    el('simCheckin').disabled=!sim.assigned || sim.running;
+    el('simFinish').disabled=!sim.running;
+    el('simNotice').textContent=message;
+  }
+  el('simAdvance').addEventListener('click',()=>{
+    if(!sim.assigned || sim.running)return;
+    sim.seconds=Math.max(0,sim.seconds-60);
+    if(sim.seconds===0){const old=sim.assigned;sim.expired.push(old);sim.assigned=null;assign();render(`${old} missed the check-in deadline. No payment taken. Next customer assigned automatically.`);}
+    else render('Reservation countdown advanced by one simulated minute.');
+  });
+  el('simCheckin').addEventListener('click',()=>{
+    if(!sim.assigned || sim.running || sim.seconds<=0)return;
+    sim.running=true;render(`${sim.assigned} checked in successfully. Payment and machine start are represented by this demo state only.`);
+  });
+  el('simFinish').addEventListener('click',()=>{
+    if(!sim.running)return;
+    const old=sim.assigned;sim.completed.push(old);sim.running=false;sim.assigned=null;assign();render(`${old}'s simulated cycle completed. Machine released and next customer assigned.`);
+  });
+  el('simReset').addEventListener('click',reset);
+  reset();
+})();
 </script></body></html>
